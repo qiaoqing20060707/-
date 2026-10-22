@@ -1,20 +1,604 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>霍格華茲魔法經營管理學院｜Academic Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#355E3B">
+<title>森林自然風｜經營管理學院</title>
+
 <style>
-:root{--green:#173b32;--deep:#0b211b;--gold:#c6a45a;--cream:#f5f0e3;--paper:#fffdf6;--ink:#27372f;--muted:#68766b;--line:#ddd2b8}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Noto Serif TC','Microsoft JhengHei',serif}.utility{background:var(--deep);color:#e7dfc9;padding:9px 6%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px Arial,sans-serif;letter-spacing:.13em}header{background:var(--green);color:var(--cream);padding:24px 6% 0;border-bottom:5px solid var(--gold)}.brand{display:flex;align-items:center;gap:17px;padding-bottom:22px}.crest{width:62px;height:72px;border:2px solid var(--gold);clip-path:polygon(0 0,100% 0,100% 72%,50% 100%,0 72%);display:grid;place-items:center;color:var(--gold);font-size:31px;flex-shrink:0}.brand h1{font-weight:500;font-size:clamp(20px,3vw,31px);margin:0 0 7px}.brand p{margin:0;font:10px Arial,sans-serif;letter-spacing:.19em;color:#dfc987}nav{display:flex;flex-wrap:wrap;border-top:1px solid #547065}nav a{padding:14px 17px;color:#f5f0e3;text-decoration:none;font-size:12px;border-bottom:3px solid transparent}nav a:hover{background:#ffffff0d;border-bottom-color:var(--gold)}.hero{padding:62px 8%;background:linear-gradient(105deg,#0c211c,#173b32 62%,#315b49);color:var(--cream);display:grid;grid-template-columns:1.4fr .6fr;gap:32px;align-items:center;position:relative;overflow:hidden}.eyebrow{font:10px Arial,sans-serif;letter-spacing:.24em;color:var(--gold)}.hero h2{font-weight:500;font-size:clamp(34px,4.8vw,56px);line-height:1.25;margin:16px 0}.hero p{max-width:690px;color:#d9e0d5;font-size:14px;line-height:2}.seal{border:1px solid var(--gold);padding:25px;text-align:center;max-width:250px;justify-self:end}.seal .symbol{font-size:56px;color:var(--gold)}.seal b{display:block;font-size:12px;letter-spacing:.15em;margin:8px 0}.seal small{font:10px/1.8 Arial,sans-serif;color:#d7d9cb}main{max-width:1240px;margin:auto;padding:42px 6% 60px}.section-label{font:10px Arial,sans-serif;letter-spacing:.2em;color:#8b7137;text-transform:uppercase}.intro{display:grid;grid-template-columns:1fr .9fr;gap:38px;align-items:center}.section-title{font-size:26px;font-weight:500;color:var(--green);margin:10px 0 14px}.intro p{font-size:13px;line-height:2;color:#526157;margin:0}.quote{padding:22px 24px;background:#ebe3d1;border-left:3px solid var(--gold);font-size:16px;line-height:1.9;color:var(--green)}.heading-row{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:42px 0 18px;padding-bottom:13px;border-bottom:1px solid var(--line)}.heading-row h2{margin:0;font-size:23px;font-weight:500;color:var(--green)}.heading-row span{font:10px Arial,sans-serif;letter-spacing:.12em;color:#7c826f}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--gold);padding:21px 18px;min-height:184px;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 8px 22px #1a35251a}.card .icon{font-size:25px;color:#9c7b37}.card h3{font-size:16px;font-weight:500;color:var(--green);margin:13px 0 9px}.card p{font-size:12px;line-height:1.9;color:var(--muted);margin:0}.card small{display:block;font:9px Arial,sans-serif;letter-spacing:.1em;color:#998454;margin-top:13px}.feature-band{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{padding:20px;background:#e9e1ce;border-bottom:2px solid var(--green)}.feature h3{font-weight:500;color:var(--green);margin:0 0 8px}.feature p{font-size:12px;line-height:1.9;color:#5e6a60;margin:0}.dashboard{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.panel{background:var(--green);color:var(--cream);padding:23px}.panel h3{font-weight:500;font-size:17px;margin:0 0 14px}.panel>p{font-size:12px;line-height:1.9;color:#d2dbd0}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.metric{background:#0b241d;border:1px solid #8c7849;padding:13px;text-align:center}.metric span{font:10px Arial,sans-serif;color:#d6c58f}.metric strong{display:block;color:#e0c574;font-size:24px;font-weight:500;margin-top:8px}.status{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #ffffff24;font-size:12px}.ok{color:#b8d6ad}.warn{color:#e2c06c}.notice{background:#eee5d2;border-left:3px solid #793f49;color:#5b5146;padding:13px 15px;margin-top:17px;font-size:11px;line-height:1.8}button{margin-top:16px;background:var(--gold);color:#132b22;border:0;padding:11px 17px;font:12px Georgia,serif;cursor:pointer}button:hover{background:#dfc77e}footer{background:var(--deep);color:#d5c995;padding:24px 6%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:10px Arial,sans-serif;letter-spacing:.08em}@media(max-width:850px){.hero,.intro,.dashboard{grid-template-columns:1fr}.seal{justify-self:start}.cards{grid-template-columns:repeat(2,1fr)}.feature-band{grid-template-columns:1fr}}@media(max-width:520px){.cards,.metrics{grid-template-columns:1fr}.hero{padding:42px 6%}.hero h2{font-size:34px}.brand{align-items:flex-start}nav a{padding:12px 10px}.heading-row{align-items:start;flex-direction:column}}
-</style></head>
+:root {
+  --green: #355E3B;
+  --sage: #B7C9A8;
+  --paper: #F4F1E8;
+  --white: #FFFEFA;
+  --deep: #233F29;
+  --text: #2D382E;
+  --muted: #697568;
+  --border: #D6DDCE;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: "Microsoft JhengHei", "Noto Serif TC", Georgia, serif;
+  line-height: 1.8;
+}
+
+.topbar {
+  background: var(--deep);
+  color: var(--sage);
+  padding: 8px 6%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+header {
+  background: var(--green);
+  color: white;
+  padding: 26px 6%;
+  border-bottom: 5px solid var(--sage);
+}
+
+.brand {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.crest {
+  width: 76px;
+  height: 76px;
+  border: 2px solid var(--sage);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--sage);
+  font-size: 36px;
+  background: #294B30;
+  flex-shrink: 0;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 30px);
+  letter-spacing: 2px;
+}
+
+.brand p {
+  margin: 5px 0 0;
+  color: var(--sage);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #E7EBDD;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 3px 8px #233F2910;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--green);
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--green);
+  color: white;
+}
+
+.hero {
+  min-height: 420px;
+  padding: 75px 7%;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(35,63,41,.96), rgba(53,94,59,.80)),
+    radial-gradient(circle at 80% 20%, var(--sage), transparent 40%);
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.eyebrow {
+  color: var(--sage);
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.hero h2 {
+  margin: 12px 0;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.35;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  max-width: 650px;
+  color: #E8EEE4;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid var(--sage);
+  color: var(--sage);
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button:hover {
+  background: var(--sage);
+  color: var(--deep);
+}
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 55px 24px;
+}
+
+section {
+  scroll-margin-top: 75px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-head span {
+  color: var(--green);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.section-head h2 {
+  color: var(--green);
+  font-size: 30px;
+  margin: 5px 0;
+}
+
+.section-head p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--sage);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 5px 18px #355E3B0A;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px #355E3B18;
+}
+
+.card-icon {
+  color: var(--green);
+  font-size: 32px;
+}
+
+.card h3 {
+  color: var(--green);
+  margin: 8px 0;
+}
+
+.card p {
+  margin: 0;
+  color: #59645A;
+  font-size: 14px;
+}
+
+.course-section {
+  padding-top: 65px;
+}
+
+.feature-band {
+  background: #E7EBDD;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 50px 24px;
+  scroll-margin-top: 75px;
+}
+
+.feature-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.feature-inner h2 {
+  color: var(--green);
+  font-size: 30px;
+  line-height: 1.4;
+}
+
+.feature-list {
+  padding-left: 24px;
+}
+
+.feature-list li {
+  margin: 10px 0;
+}
+
+.dashboard {
+  background: var(--green);
+  color: white;
+  border: 2px solid var(--sage);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 8px 25px #355E3B15;
+}
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.dashboard h3 {
+  color: var(--sage);
+  margin: 0;
+}
+
+.demo-label {
+  border: 1px solid var(--sage);
+  color: var(--sage);
+  padding: 3px 9px;
+  font-size: 11px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.metric {
+  background: #294B30;
+  border: 1px solid #789173;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+}
+
+.metric span {
+  display: block;
+  color: var(--sage);
+  font-size: 13px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.status-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.status {
+  background: var(--deep);
+  border-radius: 5px;
+  padding: 14px;
+  font-size: 13px;
+}
+
+.status b {
+  display: block;
+  color: var(--sage);
+}
+
+.note {
+  color: #E3EBDD;
+  font-size: 12px;
+}
+
+#message {
+  min-height: 24px;
+}
+
+footer {
+  background: var(--deep);
+  color: var(--sage);
+  text-align: center;
+  padding: 28px 18px;
+  font-size: 13px;
+}
+
+footer small {
+  color: #DCE5D5;
+}
+
+@media (max-width: 760px) {
+  .cards,
+  .metrics,
+  .status-list,
+  .feature-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 55px 7%;
+  }
+
+  nav a {
+    padding: 10px 12px;
+  }
+
+  .brand {
+    align-items: flex-start;
+  }
+
+  .crest {
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+  }
+
+  .dashboard {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
 <body>
-<div class="utility"><span>ACADEMIC PORTAL · MAGICAL MANAGEMENT</span><span>ACADEMIC YEAR 2026–2027</span></div>
-<header><div class="brand"><div class="crest">✦</div><div><h1>霍格華茲魔法經營管理學院</h1><p>HOGWARTS SCHOOL OF MAGICAL MANAGEMENT</p></div></div><nav><a href="#about">學院介紹</a><a href="#courses">核心課程</a><a href="#features">學院特色</a><a href="#operations">智慧營運中心</a></nav></header>
-<section class="hero"><div><div class="eyebrow">KNOWLEDGE · LEADERSHIP · IMAGINATION</div><h2>以智慧管理，<br>探索魔法世界。</h2><p>結合英國古典學院的莊重氣質與大學系所網站的清晰架構，從管理知識、策略思考到服務創新，開啟一場理性與想像力並行的學習旅程。</p></div><div class="seal"><div class="symbol">⚜</div><b>WISDOM & WONDER</b><small>ACADEMIC EXCELLENCE<br>LEADERSHIP · INNOVATION · SERVICE</small></div></section>
+
+<div class="topbar">
+  <span>GREEN ACADEMIC PORTAL</span>
+  <span>自然・永續・創新</span>
+</div>
+
+<header>
+  <div class="brand">
+    <div class="crest" aria-label="森林學院徽章">🌿</div>
+    <div>
+      <h1>森林自然經營管理學院</h1>
+      <p>ACADEMY OF BUSINESS & SUSTAINABILITY</p>
+    </div>
+  </div>
+</header>
+
+<nav aria-label="主要導覽">
+  <a href="#about">學院介紹</a>
+  <a href="#courses">核心課程</a>
+  <a href="#features">學院特色</a>
+  <a href="#operations">智慧營運中心</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">NATURE · LEARN · GROW</div>
+    <h2>從自然汲取靈感，<br>用管理創造價值。</h2>
+    <p>
+      結合經營管理、服務創新與永續理念，
+      從在地觀察出發，探索人與環境共好的可能，
+      培養兼具實踐力與創造力的未來人才。
+    </p>
+    <a href="#about" class="button">探索學院　→</a>
+  </div>
+</section>
+
 <main>
-<section class="intro" id="about"><div><div class="section-label">01 / About the Academy</div><h2 class="section-title">學院介紹</h2><p>本頁是一個以魔法學院為靈感的學術網站設計概念。透過正式導覽、清楚的內容分區、課程介紹與學院特色，呈現專業大學網站的閱讀體驗；森林綠、古金色與羊皮紙色則帶來英國古典學院的沉穩氣質。</p></div><div class="quote">「真正的智慧，不只在於知道答案，更在於提出好問題，並讓知識成為改變世界的力量。」</div></section>
-<section id="courses"><div class="heading-row"><h2>核心課程</h2><span>FOUR PILLARS OF LEARNING</span></div><div class="cards"><article class="card"><div class="icon">♜</div><h3>管理與組織</h3><p>認識組織架構、領導方式、團隊合作與管理決策。</p><small>MANAGEMENT & ORGANIZATION</small></article><article class="card"><div class="icon">✧</div><h3>策略與創新</h3><p>從問題分析與需求觀察出發，設計具體可行的創新方案。</p><small>STRATEGY & INNOVATION</small></article><article class="card"><div class="icon">⚖</div><h3>服務與倫理</h3><p>理解顧客需求、改善服務流程，建立良好的服務體驗。</p><small>SERVICE & ETHICS</small></article><article class="card"><div class="icon">⌘</div><h3>數據與決策</h3><p>透過數據指標判讀現況，讓分析與決策更有依據。</p><small>DATA & DECISION MAKING</small></article></div></section>
-<section id="features"><div class="heading-row"><h2>學院特色</h2><span>LEARN · APPLY · REFLECT</span></div><div class="feature-band"><article class="feature"><h3>✦ 跨域學習</h3><p>結合商業、科技、溝通與設計，培養整合思考能力。</p></article><article class="feature"><h3>♧ 實務導向</h3><p>透過案例與情境模擬，把課堂知識轉化為實際行動。</p></article><article class="feature"><h3>❖ 持續精進</h3><p>運用反思與回饋檢視成果，培養自主學習的習慣。</p></article></div></section>
-<section id="operations"><div class="heading-row"><h2>智慧營運中心</h2><span>INTERACTIVE SIMULATION</span></div><div class="dashboard"><div class="panel"><h3>營運指標｜Operations Overview</h3><p>以簡潔的指標卡呈現模擬交通營運資訊。按下更新按鈕，可查看示範數據變化。</p><div class="metrics"><div class="metric"><span>運行列車</span><strong id="trains">18</strong></div><div class="metric"><span>準點率</span><strong id="ontime">98.2%</strong></div><div class="metric"><span>系統負載</span><strong id="load">64%</strong></div></div><button onclick="updateData()">更新模擬資料 ✦</button></div><div class="panel"><h3>站點狀態｜Station Status</h3><div class="status"><span>北門站 · North Gate</span><span class="ok">正常</span></div><div class="status"><span>圖書館站 · Library</span><span class="ok">正常</span></div><div class="status"><span>溫室站 · Greenhouse</span><span class="warn">稍有延遲</span></div><div class="status"><span>鐘塔站 · Clock Tower</span><span class="ok">正常</span></div><div class="status"><span>南拱門站 · South Arch</span><span class="ok">正常</span></div><div class="notice">注意：站點與營運數字皆為展示用模擬資料，並非真實交通系統資訊。</div></div></div></section>
-</main><footer><span>HOGWARTS SCHOOL OF MAGICAL MANAGEMENT</span><span>ACADEMIC STYLE DEMONSTRATION · 2026</span></footer>
-<script>function updateData(){document.getElementById('trains').textContent=16+Math.floor(Math.random()*7);document.getElementById('ontime').textContent=(96+Math.random()*3.8).toFixed(1)+'%';document.getElementById('load').textContent=(45+Math.floor(Math.random()*40))+'%';}</script>
-</body></html>
+  <section id="about">
+    <div class="section-head">
+      <span>ABOUT THE ACADEMY</span>
+      <h2>學院介紹</h2>
+      <p>以自然為靈感，以管理為方法，讓創意在生活中生根。</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">♧</div>
+        <h3>管理思維</h3>
+        <p>學習規劃、組織、領導與控制，培養分析問題及制定決策的能力。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🌱</div>
+        <h3>創新實踐</h3>
+        <p>從生活與地方觀察需求，設計服務、提出創意，並透過實作持續改善。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">♻</div>
+        <h3>永續發展</h3>
+        <p>重視環境、社區與企業責任，思考如何讓經營發展與自然共存。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="courses" class="course-section">
+    <div class="section-head">
+      <span>CORE CURRICULUM</span>
+      <h2>核心課程</h2>
+      <p>從基礎知識到實際應用，建立完整的管理能力。</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-icon">Ⅰ</div>
+        <h3>經營管理</h3>
+        <p>認識企業運作、目標設定、策略思考與團隊合作。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">Ⅱ</div>
+        <h3>服務與行銷</h3>
+        <p>觀察顧客旅程，改善服務品質，打造有記憶點的品牌體驗。</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">Ⅲ</div>
+        <h3>創業與地方創生</h3>
+        <p>發掘在地資源與市場機會，設計兼具價值與可行性的方案。</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<section id="features" class="feature-band">
+  <div class="feature-inner">
+    <div>
+      <div class="eyebrow">OUR PHILOSOPHY</div>
+      <h2>讓學習與土地產生連結</h2>
+      <p>
+        透過專題、團隊討論與實地觀察，
+        將課堂所學連結真實世界，
+        從在地文化與自然環境中發現創新機會。
+      </p>
+    </div>
+
+    <ul class="feature-list">
+      <li>以顧客需求為起點，設計更好的服務。</li>
+      <li>以團隊合作整合不同想法。</li>
+      <li>以資料觀察成果，持續修正與進步。</li>
+      <li>以地方特色為靈感，發展永續方案。</li>
+    </ul>
+  </div>
+</section>
+
+<main>
+  <section id="operations">
+    <div class="section-head">
+      <span>SMART OPERATIONS LAB</span>
+      <h2>智慧營運中心</h2>
+      <p>按下按鈕，體驗互動式數據展示。</p>
+    </div>
+
+    <div class="dashboard">
+      <div class="dashboard-top">
+        <h3>🌿 營運監控面板</h3>
+        <span class="demo-label">DEMO DATA · 示範模式</span>
+      </div>
+
+      <p class="note">以下為隨機模擬資料，並非即時交通或營運資訊。</p>
+
+      <div class="metrics">
+        <div class="metric">
+          <span>模擬服務項目</span>
+          <strong id="trains">12</strong>
+        </div>
+
+        <div class="metric">
+          <span>模擬服務達成率</span>
+          <strong id="ontime">96%</strong>
+        </div>
+
+        <div class="metric">
+          <span>資源使用率</span>
+          <strong id="load">42%</strong>
+        </div>
+      </div>
+
+      <div class="status-list">
+        <div class="status">
+          <b>自然探索區</b>
+          <span>運作正常・示範</span>
+        </div>
+
+        <div class="status">
+          <b>創新服務區</b>
+          <span>運作正常・示範</span>
+        </div>
+
+        <div class="status">
+          <b>永續實踐區</b>
+          <span>例行監測・示範</span>
+        </div>
+      </div>
+
+      <button class="button" id="refresh" type="button">
+        更新示範數據 ↻
+      </button>
+
+      <p id="message" class="note" aria-live="polite">
+        目前顯示預設示範值。
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  森林自然經營管理學院<br>
+  自然・永續・創新<br>
+  <small>本頁為學習用示範網站，非官方學校網站。</small>
+</footer>
+
+<script>
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+document.getElementById("refresh").addEventListener("click", function () {
+  document.getElementById("trains").textContent =
+    randomInt(8, 18);
+
+  document.getElementById("ontime").textContent =
+    randomInt(88, 100) + "%";
+
+  document.getElementById("load").textContent =
+    randomInt(25, 75) + "%";
+
+  document.getElementById("message").textContent =
+    "示範數據已更新！以上為隨機模擬資料。";
+});
+</script>
+
+</body>
+</html>
