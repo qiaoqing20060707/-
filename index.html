@@ -1,0 +1,387 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>霍格華茲魔法經營管理學院</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Microsoft JhengHei", Georgia, serif;
+  background: #f5f0e3;
+  color: #26372f;
+  line-height: 1.8;
+}
+
+header {
+  background: #173b32;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 5px solid #c6a45a;
+}
+
+.crest {
+  font-size: 45px;
+  color: #d7bd78;
+}
+
+header h1 {
+  margin: 5px 0;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #d7bd78;
+  letter-spacing: 2px;
+}
+
+nav {
+  background: #e8dfc9;
+  text-align: center;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: #173b32;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #c6a45a;
+  color: white;
+}
+
+.hero {
+  padding: 85px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #102a24,
+    #244d40,
+    #173b32
+  );
+}
+
+.hero h2 {
+  font-size: 38px;
+  color: #e0c579;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 24px;
+  border: 1px solid #c6a45a;
+  color: #c6a45a;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background: #c6a45a;
+  color: #173b32;
+}
+
+section {
+  padding: 55px 8%;
+}
+
+.section-title {
+  text-align: center;
+  color: #173b32;
+  margin-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #fffdf7;
+  border: 1px solid #ded4bd;
+  border-top: 4px solid #c6a45a;
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #173b3220;
+}
+
+.card h3 {
+  color: #173b32;
+}
+
+.card .icon {
+  font-size: 32px;
+  color: #a38442;
+}
+
+.features {
+  background: #e8dfc9;
+}
+
+.dashboard {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: #173b32;
+  color: white;
+  border: 2px solid #c6a45a;
+}
+
+.dashboard h3 {
+  color: #e0c579;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.metric {
+  text-align: center;
+  background: #244d40;
+  padding: 20px;
+  border: 1px solid #577363;
+}
+
+.metric span {
+  display: block;
+  color: #e0c579;
+  font-size: 14px;
+}
+
+.metric strong {
+  display: block;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
+.note {
+  font-size: 12px;
+  color: #e0d5b7;
+}
+
+footer {
+  background: #102a24;
+  color: #d7bd78;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 700px) {
+  .cards,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  nav a {
+    padding: 6px 9px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 40px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="crest">✦ ⚜ ✦</div>
+  <h1>霍格華茲魔法經營管理學院</h1>
+  <p>HOGWARTS ACADEMY OF BUSINESS & MANAGEMENT</p>
+</header>
+
+<nav>
+  <a href="#about">學院介紹</a>
+  <a href="#courses">核心課程</a>
+  <a href="#features">學院特色</a>
+  <a href="#operations">智慧營運中心</a>
+</nav>
+
+<div class="hero">
+  <h2>以智慧管理，探索魔法世界</h2>
+  <p>
+    結合管理思維、創新實踐與數位科技，
+    培養具備觀察力、創造力與團隊合作能力的未來人才。
+  </p>
+  <a href="#about" class="button">探索學院 →</a>
+</div>
+
+<section id="about">
+  <div class="section-title">
+    <h2>學院介紹</h2>
+    <p>在傳統智慧與現代管理之間，發現創新的可能。</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">♜</div>
+      <h3>管理思維</h3>
+      <p>學習規劃、組織、領導與控制，提升分析問題與決策的能力。</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✧</div>
+      <h3>創新實踐</h3>
+      <p>從生活中發現需求，提出創意，並透過實際行動改善問題。</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⌘</div>
+      <h3>數位應用</h3>
+      <p>運用數位工具與資料分析，協助團隊掌握營運狀況。</p>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="section-title">
+    <h2>核心課程</h2>
+    <p>從基礎知識到實務應用，建立完整的管理能力。</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Ⅰ 經營管理</h3>
+      <p>認識企業運作、策略規劃與團隊合作。</p>
+    </div>
+
+    <div class="card">
+      <h3>Ⅱ 服務與行銷</h3>
+      <p>了解顧客需求，改善服務品質，建立品牌形象。</p>
+    </div>
+
+    <div class="card">
+      <h3>Ⅲ 創業與地方創生</h3>
+      <p>發掘地方特色與市場機會，設計創新服務。</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="features">
+  <div class="section-title">
+    <h2>學院特色</h2>
+    <p>讓知識不只停留在課本。</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>實作學習</h3>
+      <p>透過專題與活動，將課堂知識應用在真實情境。</p>
+    </div>
+
+    <div class="card">
+      <h3>團隊合作</h3>
+      <p>分享想法、互相協助，共同完成任務與目標。</p>
+    </div>
+
+    <div class="card">
+      <h3>持續創新</h3>
+      <p>觀察成果、收集意見，持續改善服務與流程。</p>
+    </div>
+  </div>
+</section>
+
+<section id="operations">
+  <div class="section-title">
+    <h2>智慧營運中心</h2>
+    <p>互動式數據展示</p>
+  </div>
+
+  <div class="dashboard">
+    <h3>✦ 營運監控面板</h3>
+    <p class="note">以下為示範數據，並非即時交通資訊。</p>
+
+    <div class="metrics">
+      <div class="metric">
+        <span>模擬列車數</span>
+        <strong id="trains">12</strong>
+      </div>
+
+      <div class="metric">
+        <span>模擬準點率</span>
+        <strong id="ontime">96%</strong>
+      </div>
+
+      <div class="metric">
+        <span>系統負載</span>
+        <strong id="load">42%</strong>
+      </div>
+    </div>
+
+    <button class="button" onclick="updateData()">
+      更新示範數據 ↻
+    </button>
+
+    <p class="note" id="message">目前顯示預設示範值。</p>
+  </div>
+</section>
+
+<footer>
+  霍格華茲魔法經營管理學院<br>
+  學習・實踐・創新<br>
+  <small>本頁為學習用示範網站，非官方學校網站。</small>
+</footer>
+
+<script>
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function updateData() {
+  document.getElementById("trains").textContent =
+    randomNumber(8, 18);
+
+  document.getElementById("ontime").textContent =
+    randomNumber(88, 100) + "%";
+
+  document.getElementById("load").textContent =
+    randomNumber(25, 75) + "%";
+
+  document.getElementById("message").textContent =
+    "示範數據已更新！此為隨機模擬資料。";
+}
+</script>
+
+</body>
+</html>
